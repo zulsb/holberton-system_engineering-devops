@@ -1,0 +1,3 @@
+#!/bin/bash
+usermode -u 2005 betty
+usermod -u 
