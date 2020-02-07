@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-# This script is displaying the content of the current directory and In a list format.
+# This script is displaying the content of the current directory
+# and In a list format.
 for i in *; do
 	echo $i | cut -d "-" -f2
 done
