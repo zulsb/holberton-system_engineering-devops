@@ -3,15 +3,13 @@
 f="holbertonschool"
 if [ -e "$f" ]; then
 	echo "$f file exists"
-	if [ -s "$f" ];
-	then
+	if [ -s "$f" ];	then
 		echo "$f file is not empty"
 	else
 		echo "$f is empty"
 	fi
 
-	if [ -f "$f" ];
-	then
+	if [ -f "$f" ];	then
 		echo "$f is a regular file"
 	fi
 else
