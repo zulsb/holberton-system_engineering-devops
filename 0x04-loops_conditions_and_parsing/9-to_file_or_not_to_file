@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
-# This script gives you information about the holbertonschool file.
+# This script gives information about the holbertonschool file.
 f="holbertonschool"
-if [ -e "$f" ];
-then
+if [ -e "$f" ]; then
 	echo "$f file exists"
 	if [ -s "$f" ];
 	then
@@ -10,6 +9,7 @@ then
 	else
 		echo "$f is empty"
 	fi
+
 	if [ -f "$f" ];
 	then
 		echo "$f is a regular file"
