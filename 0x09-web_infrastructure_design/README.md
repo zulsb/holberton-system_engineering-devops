@@ -19,10 +19,10 @@ Web infrastructure design files:
 ![simple web infrastructure](https://lh4.googleusercontent.com/1LlrBF_U_N1FiwP4EBjjLLcK3HIysJhMhPVjtsm_5isTzjXs3CRectLbUPZAXejvYhrzC1-S6Niyc5a2aWSZ=w1920-h969-rw)
 #### [1. Distributed web infrastructure](./1-distributed_web_infrastructure)
 * Design a three server web infrastructure that hosts the website www.foobar.com.
-![distributed web infrastructure](https://drive.google.com/file/d/1R1ZeFN5cQG2-9i0iWiwwKZjDTYDNegnK/view)
+![distributed web infrastructure](https://lh5.googleusercontent.com/qkHgnSnIj0_lZnTgwWgXm67hXdQY3KvHtVev7Kx_NgWrWPwj4b6NsA5F8gqazYQRExii8EFhnRIUKyWBMlnR=w1920-h969-rw)
 #### [2. Secured and monitored web infrastructure](./2-secured_and_monitored_web_infrastructure)
 * Design a three server web infrastructure that hosts the website www.foobar.com, it must be secured, serve encrypted traffic, and be monitored.
-![secured and monitored infrastructure](https://drive.google.com/file/d/1kLLj-elJ4Rw3XuhU3HXV2K86fEpOGfRA/view)
+![secured and monitored infrastructure](https://lh6.googleusercontent.com/BlLESLSoLxj7yPNbQ9WqIUKQ27IlCS-tEg2yi-zVCHf6g_yFSj-7vJTtMTFNZwip6tMFvfJCNgrB4U_bFpZB=w1920-h969-rw)
 ---
 ### Author
 #### Luz Sánchez
