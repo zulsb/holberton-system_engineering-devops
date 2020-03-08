@@ -16,7 +16,7 @@ Web infrastructure design files:
 ### Tasks project
 #### [0. Simple web stack](./0-simple_web_stack)
 * Design a one server web infrastructure that hosts the website that is reachable via www.foobar.com.
-![simple web infrastructure](https://drive.google.com/file/d/16z0NZ_mkH8tjMQHZEPRM8J8lAIBRhDDv/view?usp=sharing)
+![simple web infrastructure](https://drive.google.com)
 #### [1. Distributed web infrastructure](./1-distributed_web_infrastructure)
 * Design a three server web infrastructure that hosts the website www.foobar.com.
 ![distributed web infrastructure](https://drive.google.com/file/d/1R1ZeFN5cQG2-9i0iWiwwKZjDTYDNegnK/view)
