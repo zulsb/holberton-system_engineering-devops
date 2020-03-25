@@ -4,7 +4,7 @@ sudo apt-get -y update
 sudo apt-get -y install nginx
 sudo ufw allow http
 
-echo "Holberton School" > /var/www/html/index.html
+echo "Holberton School" > /usr/share/nginx/html/index.html
 sed -i '/listen 80 default_server/a rewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;\n' /etc/nginx/sites-available/default
 
 sudo service nginx restart
