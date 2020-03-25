@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Configuration Nginx server so that /redirect_me is redirecting to another page.
-REDIRECTION="location /redirect_me {\n return 301 https://twitter.com;\n}\n"
+REDIRECTION="location /redirect_me {rewrite ^/redirect_me(.*)$ https://twitter.com/;\n}"
 sudo apt-get update
 sudo apt-get -y install nginx
 sudo ufw allow http
