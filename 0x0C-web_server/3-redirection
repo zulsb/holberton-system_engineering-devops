@@ -6,4 +6,4 @@ sudo apt-get -y install nginx
 sudo ufw allow http
 echo "Holberton School" > /var/www/html/index.html
 sudo sed -i "30i $REDIRECTION" /etc/nginx/sites-available/default
-sudo service nginx start
+sudo /etc/init.d/nginx start
