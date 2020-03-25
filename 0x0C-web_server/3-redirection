@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
 # Configuration Nginx server so that /redirect_me is redirecting to another page.
-REDIRECTION="location /redirect_me {rewrite ^/redirect_me(.*)$ https://twitter.com/;\n}"
-sudo apt-get update
+sudo apt-get -y update
 sudo apt-get -y install nginx
 sudo ufw allow http
+
 echo "Holberton School" > /var/www/html/index.html
-sudo sed -i "30i $REDIRECTION" /etc/nginx/sites-available/default
-sudo /etc/init.d/nginx start
+sed -i '/listen 80 default_server/a rewrite ^/redirect_me https://twitter.com permanent;' /etc/nginx/sites-available/default
+
+sudo service nginx start
