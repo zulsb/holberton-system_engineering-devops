@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# Configuration my Nginx server to have a custom 404 page that contains a string.
+sudo apt-get -y update
+sudo apt-get -y install nginx
+sudo ufw allow http
+sudo chgrp -R ubuntu /usr/share/nginx/html
+sudo chmod -R g+w /usr/share/nginx/html
+echo "Holberton School" > /usr/share/nginx/html/index.html
+sudo service nginx stop
+# Redirection
+sed -i '/listen 80 default_server/a rewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;\n' /etc/nginx/sites-available/default
+sudo service nginx restart
+# 404 Page
+echo "Ceci n'est pas une page" > /usr/share/nginx/html/404_error.html
+sed -i '/listen 80 default_server/a error_page 404 /404_error.html; location = /404_error.html {root /usr/share/nginx/html;\n internal;}' /etc/nginx/sites-available/default
+# Restart
+sudo service nginx start
