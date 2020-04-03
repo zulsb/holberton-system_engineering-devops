@@ -2,6 +2,6 @@
 # Install nginx on my 1178-web-02 server.
 sudo apt-get update
 sudo apt-get -y install nginx
-echo "Holberton School" > /var/www/html/index.html
+echo "Holberton School" > /usr/share/nginx/html/index.html
 sed -i "14i\ \tadd_header X-Served-By $HOSTNAME;" /etc/nginx/sites-available/default
 sudo service nginx restart
