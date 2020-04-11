@@ -41,7 +41,7 @@ frontend fronthaproxy
 frontend www-https
          bind *:443 ssl crt /etc/haproxy/certs/www.luzsanchez.tech.pem
          reqadd X-Forwarded-Proto:\ https
-         default_backend back
+         default_backend backnodes
 backend backnodes
          balance roundrobin
          redirect scheme https if !{ ssl_fc }
