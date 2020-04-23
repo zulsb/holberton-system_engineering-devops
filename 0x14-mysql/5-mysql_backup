@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Script generates MySQL dump of tyrell_corp databases and compressed tar.gz archive for backup.
+mysqldump -u root -p"$1" --opt tyrell_corp > backup.sql
+tar -czvf "$(date +%d-%m-%Y).tar.gz" backup.sql
