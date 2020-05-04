@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Module that gather data from an API"""
+"""Module that export to CSV"""
 import csv
 import requests
 from sys import argv
